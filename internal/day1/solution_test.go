@@ -55,7 +55,7 @@ func TestSolutionPart2(t *testing.T) {
 		{
 			[]int{1, 1, 1},
 			[]int{1, 1, 1},
-			3, // Each 1 appears 3 times in right list, so 1*3 + 1*3 + 1*3
+			9, // Each 1 appears 3 times in right list, so 1*3 + 1*3 + 1*3
 		},
 		{
 			[]int{2, 3, 4},
@@ -65,7 +65,7 @@ func TestSolutionPart2(t *testing.T) {
 		{
 			[]int{1, 2, 3},
 			[]int{1, 1, 1},
-			1, // Only 1 appears in right list (3 times), so 1*3 + 2*0 + 3*0
+			3, // Only 3 appears in right list (3 times), so 1*3 + 2*0 + 3*0
 		},
 	}
 
