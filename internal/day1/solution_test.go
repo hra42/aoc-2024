@@ -50,22 +50,22 @@ func TestSolutionPart2(t *testing.T) {
 		{
 			[]int{3, 4, 2, 1, 3, 3},
 			[]int{4, 3, 5, 3, 9, 3},
-			31, // 9 + 4 + 0 + 0 + 9 + 9
+			31,
 		},
 		{
 			[]int{1, 1, 1},
 			[]int{1, 1, 1},
-			9, // Each 1 appears 3 times in right list, so 1*3 + 1*3 + 1*3
+			9,
 		},
 		{
 			[]int{2, 3, 4},
 			[]int{5, 6, 7},
-			0, // No numbers in common
+			0,
 		},
 		{
 			[]int{1, 2, 3},
 			[]int{1, 1, 1},
-			3, // Only 3 appears in right list (3 times), so 1*3 + 2*0 + 3*0
+			3,
 		},
 	}
 
