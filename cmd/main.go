@@ -28,12 +28,18 @@ func main() {
 		}
 		fmt.Printf("Day 1 Part %d: %d\n", *part, result)
 	case 2:
-		result, err := day2.CalculateSolution("input/day2/input.txt")
+		var result int
+		var err error
+		if *part == 1 {
+			result, err = day2.CalculateSolutionPart1()
+		} else {
+			result, err = day2.CalculateSolutionPart2()
+		}
 		if err != nil {
-			fmt.Println("Error calculating solution:", err)
+			fmt.Printf("Error calculating solution for day 2 part %d: %v\n", *part, err)
 			return
 		}
-		fmt.Println(result)
+		fmt.Printf("Day 2 Part %d: %d\n", *part, result)
 	default:
 		fmt.Println("Day not implemented yet")
 	}
